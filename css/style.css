@@ -55,6 +55,7 @@ body {
 }
 
 .heder-flex {
+  margin: auto;
   padding: 0 15px;
   justify-content: space-between;
   gap: 40px;
@@ -66,7 +67,7 @@ body {
   align-items: center;
 }
 .logo-web {
-  padding: 24px 0;
+  padding: 16px 0;
   margin-right: 76px;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -75,6 +76,11 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
+}
+@media screen and (min-width: 768px) {
+  .logo-web {
+    padding: 24px 0;
+  }
 }
 .logo-studio {
   color: #2e2f42;
@@ -138,8 +144,7 @@ body {
   .info {
     display: flex;
     row-gap: 12px;
-    gap: 0px;
-
+    justify-content: end;
     flex-wrap: wrap;
   }
 }
@@ -158,14 +163,18 @@ body {
 .burger-butt {
   display: flex;
   align-items: center;
-  justify-content: center;
+
+  justify-content: end;
   background-color: #ffffff;
   border: white;
-  height: 24px;
-  width: 24px;
 }
 .burger-svg {
   fill: black;
+}
+@media screen and (min-width: 768px) {
+  .burger-butt {
+    display: none;
+  }
 }
 
 /* MOBILE MENU */
