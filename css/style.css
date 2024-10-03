@@ -696,3 +696,19 @@ XXX
 .hed-cen {
   text-align: center;
 }
+/* 
+XXX
+XXX
+XXX
+FOURTH SECTION
+XXX
+XXX
+XXX
+ */
+
+.portfolio-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  row-gap: 48px;
+}

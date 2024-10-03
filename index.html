@@ -371,17 +371,24 @@
         </div>
       </section>
       <!-- 4 portfolio section -->
-      <!-- <section class="sec-pdd">
+      <section class="sec-pdd">
         <div class="container">
           <h2 class="heder-secondd">Our Portfolio</h2>
           <ul class="portfolio-list">
             <li class="prtf-item">
               <div class="prtf-transist">
-                <img
+               <picture> 
+    <source srcset="./images/portfolio-mob/photo1.jpg 1x, ./images/portfolio-mob/photo1@2x.jpg 2x">
+    <source srcset="./images/portfolio-tab/photo1.jpg 1x, ./images/portfolio-tab/photo1@2x.jpg 2x" media="min-width: 768px" >
+       <source srcset="./images/portfolio/photo1.jpg 1x, ./images/portfolio/photo1@2x.jpg 2x" media="min-width: 1158px" >
+
+
+                 <img
                   width="360"
                   src="./images/portfolio/photo1.jpg"
                   alt="Bank_app_pic"
-                />
+                /></picture>
+              
                 <p class="prg-transist">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -485,7 +492,7 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
     </main>
     <!-- <footer class="footer-class">
       <div class="container footer-div">
