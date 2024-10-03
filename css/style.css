@@ -712,6 +712,18 @@ XXX
   gap: 24px;
   row-gap: 48px;
 }
+@media screen and (min-width: 768px) {
+  .portfolio-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 72px;
+  }
+}
+@media screen and (min-width: 1158px) {
+  .portfolio-list {
+    row-gap: 42px;
+  }
+}
 .prtf-item {
   width: 100%;
 }
@@ -760,4 +772,12 @@ XXX
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
   border-top: none;
+}
+
+.heder-thirdd {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
 }
