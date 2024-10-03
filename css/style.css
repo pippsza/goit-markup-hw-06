@@ -506,17 +506,17 @@ XXX
     padding-bottom: 120px;
   }
 }
-@media screen and (min-width: 1158px) {
-  .heder-secondd {
-    margin-bottom: 72px;
-    color: #2e2f42;
-    line-height: 1.11;
-    font-size: 36px;
-    font-weight: 700;
-    letter-spacing: 0.02em;
-    text-align: center;
-    text-transform: capitalize;
-  }
+
+.heder-secondd {
+  margin: auto;
+  margin-bottom: 72px;
+  color: #2e2f42;
+  line-height: 1.11;
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-align: center;
+  text-transform: capitalize;
 }
 
 .sec-benefits {
@@ -600,4 +600,99 @@ XXX
   .prg {
     width: 264px;
   }
+}
+
+/* 
+XXX
+XXX
+XXX
+THIRD SECTION
+XXX
+XXX
+XXX
+*/
+.team-list {
+  margin: auto;
+  width: 264px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 72px;
+}
+
+@media screen and (min-width: 768px) {
+  .team-list {
+    width: auto;
+    flex-direction: row;
+    gap: 24px;
+    justify-content: center;
+    row-gap: 64px;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 1158px) {
+  .team-list {
+    gap: 24px;
+  }
+}
+
+.artcle {
+  justify-content: center;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+
+  border-radius: 0px 0px 4px 4px;
+  background-color: white;
+  width: 264px;
+}
+@media screen and (min-width: 768px) {
+  .artcle {
+    width: 264px;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .artcle {
+    width: calc((100% - 72px) / 4);
+  }
+}
+.our-team-section {
+  background-color: #f4f4fd;
+}
+
+.div-team {
+  padding: 32px 0;
+  text-align: center;
+}
+
+.team-card-soc {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+.team-card-item {
+  width: 40px;
+  height: 40px;
+}
+.team-card-link {
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  width: 100%;
+  height: 100%;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.team-card-svg {
+  fill: #f4f4fd;
+}
+
+.prg-mrg {
+  margin-bottom: 8px;
+  width: 264px;
+}
+
+.hed-cen {
+  text-align: center;
 }

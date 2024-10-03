@@ -565,9 +565,6 @@ p {
   font-weight: 400;
 }
 
-.our-team-section {
-  background-color: #f4f4fd;
-}
 .is-open.backdrop {
   pointer-events: visible;
   opacity: 1;
