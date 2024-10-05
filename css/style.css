@@ -19,6 +19,8 @@ a {
 }
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 body {
   font-family: "Roboto", sans-serif;
@@ -396,7 +398,7 @@ XXX
 
 @media screen and (min-width: 768px) {
   .sec-order {
-    max-width: 1440px;
+    max-width: 768px;
     padding: 112px 0;
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
@@ -584,12 +586,19 @@ XXX
     text-align: left;
   }
 }
+@media screen and (min-width: 1158px) {
+  .heder-third {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+}
 .prg {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  width: 288px;
+
   transform: translateY(0%);
   font-size: 16px;
 }
@@ -601,6 +610,7 @@ XXX
 @media screen and (min-width: 1158px) {
   .prg {
     width: 264px;
+    font-weight: 400;
   }
 }
 
@@ -697,7 +707,11 @@ XXX
 
 .hed-cen {
   text-align: center;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
 }
+
 /* 
 XXX
 XXX
@@ -777,6 +791,7 @@ XXX
 }
 
 .heder-thirdd {
+  margin-bottom: 8px;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -807,7 +822,7 @@ XXX
 
 .footer-div {
   display: flex;
-  align-items: baseline;
+  align-items: center;
   flex-direction: column;
   gap: 24px;
   row-gap: 72px;
@@ -817,12 +832,14 @@ XXX
   .footer-div {
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    padding: 0 108px;
   }
 }
 @media screen and (min-width: 1158px) {
   .footer-div {
     flex-wrap: nowrap;
+    padding: 0 15px;
+    gap: 0;
   }
 }
 
@@ -832,10 +849,9 @@ XXX
   }
 }
 .logo-footer {
-  display: inline-block;
-
-  padding: 24px 86px;
-
+  display: block;
+  margin-bottom: 16px;
+  text-align: center;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 18px;
@@ -846,7 +862,7 @@ XXX
 }
 @media screen and (min-width: 768px) {
   .logo-footer {
-    padding: 24px 0;
+    text-align: left;
   }
 }
 .logo-studio-second {
@@ -888,9 +904,11 @@ XXX
     margin: 0%;
   }
 }
+
 .footer-form {
   display: flex;
   align-items: center;
+  margin-left: auto;
   flex-direction: column;
   gap: 16px;
 }
@@ -913,6 +931,7 @@ XXX
   gap: 24px;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 @media screen and (min-width: 768px) {
   .footer-form-form {
@@ -927,7 +946,7 @@ XXX
   color: #ffffff;
 }
 .footer-input {
-  width: 264px;
+  width: 288px;
   height: 40px;
   border: 1px solid #ffffff;
   background-color: transparent;
@@ -1208,4 +1227,19 @@ XXX
 }
 .footer-butt:hover {
   background-color: #31d0aa;
+}
+
+/* 
+XXX
+XXX
+XXX
+FIX
+XXX
+XXX
+XXX
+ */
+
+.gap-mobile {
+  gap: 40px;
+  justify-content: left;
 }
